@@ -17,7 +17,7 @@
 
         <div>
             <label for="name to add" class="m-3 font-bold">Name of Pizza</label>
-            <input type="text" class=" bg-gray-100 sm:w-[600px] lg:w-[1200px] rounded-md border-r-2 border-b-2 border-t-2 border-l-2 p-3 m-3">
+            <input id="input" class=" bg-gray-100 sm:w-[600px] lg:w-[1200px] rounded-md border-r-2 border-b-2 border-t-2 border-l-2 p-3 m-3">
         </div>
         
             <div class="float-end mr-9"> 
@@ -25,10 +25,13 @@
                     <h4 class="bg-[#FF6A16] m-9 flex gap-3 h-12 w-36 text-white rounded-md p-2 text-lg font-bold"> 
                 Add todo</h4> </a> 
             </div>
-        
-
-   
     </section>
+
+    <script>
+        const input = document.getElementById('input');
+        
+        console.log('input');
+    </script>
 
 </body>
 </html>
