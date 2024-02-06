@@ -11,8 +11,11 @@ const result = items.filter((notExpensive) => notExpensive.price < 100);
 // console.log(result);
 
 //////////Filter and show the product that will be expensive in the array
-const expensive = items.filter((expensive) => expensive.price > 100);
+const expensive = items.filter((expensive) => expensive.price > 500);
 // console.log(expensive);
+expensive.map((item)=> 
+console.log(item.name)
+)
 
 //////////////////Calculate the full price of all products combined
 const totalPrice = items.reduce((item1,item2) => 
@@ -25,16 +28,14 @@ const totalPrice = items.reduce((item1,item2) =>
 // }
 // console.log(totalPrice);
 
-////////////Filter and show the product that will be start with letter b at first postion
+////////////Filter and show the product that will  be start with letter b at first postion
 const startWithB = items.filter((withB) => withB.name.charAt(0) .toString().toLowerCase() , ('b'))
 // console.log(startWithB);
 
 /////////////Calculate the full price of all products combined and remove products that are under $10
 
-// const totalPrice = items.reduce((accumulator, currentItem) => accumulator + currentItem.price, 0);
-// console.log("Total Price:", totalPrice);
-
 const expensiveItems = items.filter(item => item.price > 10);
-const totalExclusiveTeen = totalPrice - expensiveItems
-console.log( expensiveItems , totalPrice);
+const totalExclusiveTeens = totalPrice - expensiveItems
+
+console.log( totalExclusiveTeens);
 
