@@ -18,8 +18,10 @@ console.log(item.name)
 )
 
 //////////////////Calculate the full price of all products combined
-const totalPrice = items.reduce((item1,item2) => 
-   item1 + item2.price,0); 
+const totalPrice = items.reduce((item1,item2) => {
+    item1 + item2.price,0;
+})
+    
 // console.log(totalPrice);
  
 // const totalPrice = items.reduceRight(total)
